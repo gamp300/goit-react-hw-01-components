@@ -1,5 +1,18 @@
 import PropTypes from 'prop-types';
 
+import {
+  ProfileContainer,
+  DescriptionContainer,
+  Avatar,
+  Name,
+  Tag,
+  Location,
+  StatsList,
+  StatItem,
+  Label,
+  Quantity,
+} from './Profile.styled';
+
 export default function Profile({
   username,
   tag,
@@ -10,33 +23,33 @@ export default function Profile({
   likes,
 }) {
   return (
-    <div className="profile">
-      <div className="description">
-        <img
+    <ProfileContainer>
+      <DescriptionContainer>
+        <Avatar
           src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
           alt="User avatar"
           className="avatar"
         />
-        <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+        <Name>{username}</Name>
+        <Tag>{tag}</Tag>
+        <Location>{location}</Location>
+      </DescriptionContainer>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <StatsList>
+        <StatItem>
+          <Label className="label">Followers</Label>
+          <Quantity className="quantity">{followers}</Quantity>
+        </StatItem>
+        <StatItem>
+          <Label className="label">Views</Label>
+          <Quantity className="quantity">{views}</Quantity>
+        </StatItem>
+        <StatItem>
+          <Label className="label">Likes</Label>
+          <Quantity className="quantity">{likes}</Quantity>
+        </StatItem>
+      </StatsList>
+    </ProfileContainer>
   );
 }
 
