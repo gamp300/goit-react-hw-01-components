@@ -37,16 +37,16 @@ export default function Profile({
 
       <StatsList>
         <StatItem>
-          <Label className="label">Followers</Label>
-          <Quantity className="quantity">{followers}</Quantity>
+          <Label>Followers</Label>
+          <Quantity>{followers}</Quantity>
         </StatItem>
         <StatItem>
-          <Label className="label">Views</Label>
-          <Quantity className="quantity">{views}</Quantity>
+          <Label>Views</Label>
+          <Quantity>{views}</Quantity>
         </StatItem>
         <StatItem>
-          <Label className="label">Likes</Label>
-          <Quantity className="quantity">{likes}</Quantity>
+          <Label>Likes</Label>
+          <Quantity>{likes}</Quantity>
         </StatItem>
       </StatsList>
     </ProfileContainer>
