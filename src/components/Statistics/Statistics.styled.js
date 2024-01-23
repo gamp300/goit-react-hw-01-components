@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 export const StatisticsContainer = styled.section`
-  margin: 25px 500px;
-  background-color: #f9f9f9;
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: auto;
 `;
 
 export const Title = styled.h2`
@@ -31,6 +35,7 @@ export const StatItem = styled.li`
   display: flex;
   flex-direction: column;
   padding: 10px 0;
+  margin: 9px;
 
   &:last-child {
     border-bottom: none;

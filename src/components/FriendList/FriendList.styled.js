@@ -12,4 +12,27 @@ export const FriendListContainer = styled.div`
   margin: 25px auto;
 `;
 
-// list-style: none;
+// Estilos para el componente FriendListItem
+// const FriendListItemContainer = styled.li`
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 10px;
+// `;
+
+// const StatusIndicator = styled.span`
+//   width: 10px;
+//   height: 10px;
+//   border-radius: 50%;
+//   background-color: ${props => (props.isOnline ? 'green' : 'red')};
+//   margin-right: 10px;
+// `;
+
+// const Avatar = styled.img`
+//   width: 48px;
+//   height: 48px;
+//   border-radius: 50%;
+// `;
+
+// const Name = styled.p`
+//   margin: 0;
+// `;
