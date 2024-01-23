@@ -25,11 +25,7 @@ export default function Profile({
   return (
     <ProfileContainer>
       <DescriptionContainer>
-        <Avatar
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-          alt="User avatar"
-          className="avatar"
-        />
+        <Avatar src={avatar} alt="User avatar" className="avatar" />
         <Name>{username}</Name>
         <Tag>{tag}</Tag>
         <Location>{location}</Location>

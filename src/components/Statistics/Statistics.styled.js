@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+const getRandomColor = index => {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
 export const StatisticsContainer = styled.section`
   display: flex;
   flex-direction: column;
@@ -22,33 +31,27 @@ export const StatList = styled.ul`
   list-style: none;
   padding: 0;
   display: flex;
-  list-style: none;
-  padding: 0;
   flex-direction: row;
-  justify-content: space-evenly;
+  color: white;
 `;
 
 export const StatItem = styled.li`
   text-align: center;
-  border: 1px solid red;
   width: 50px;
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
-  margin: 9px;
+  padding: 15px;
 
-  &:last-child {
-    border-bottom: none;
-  }
+  background-color: ${props => getRandomColor(props.index)};
 `;
 
 export const Label = styled.span`
   font-size: 16px;
-  font-weight: bold;
 `;
 
 export const Percentage = styled.span`
+  font-weight: bold;
   font-size: 16px;
-  color: #4caf50;
+  color: white;
   margin-top: 5px;
 `;
